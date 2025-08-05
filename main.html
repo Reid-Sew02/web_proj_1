@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello World!</title>
+
+        <!-- 
+         styling tips! 
+         use # to select by id
+         use . to select by class
+          -->
+        <style>
+            
+            /* header styling */
+            .top-header {
+                background-color: aliceblue;
+                overflow: hidden; /* dont let text go out of header */
+                padding: 0px 10px; 
+                font-family: Arial;
+            }
+
+            /* header links*/
+            .top-header-item {
+                color: black;
+                float: left; /* header links go to the left side of the page */
+                text-align: center; /* header links are center aligned within their padding */
+                padding: 10px;
+                font-size: 20px; 
+                line-height: 20px; 
+                text-decoration: none; /* disables underline */
+            }
+            
+            .top-header a:hover {
+                color: black;
+                background-color: gray;
+            }
+            
+            /* dropdown stuff*/
+            .top-header-dropdown {
+                float: left;
+                overflow: hidden;
+            }
+
+            .dropdown-button {
+                border: none;
+                outline: none;
+                color: black;
+                float: left; /* header links go to the left side of the page */
+                text-align: center; /* header links are center aligned within their padding */
+                padding: 10px;
+                font-size: 20px; 
+                line-height: 20px; 
+                text-decoration: none; /* disables underline */
+                background-color: inherit;
+            }
+
+            .dropdown-content {
+                display:none; /* hide until hovered */
+            }
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+            }
+            .dropdown-content a:hover {
+                color: black;
+                background-color: gray;
+            }
+            .top-header-dropdown:hover .dropdown-content {
+                display: block;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <!-- header content -->
+        <div class="top-header">
+            <a class="top-header-item" href="main.html"> Home </a> 
+            <div class="top-header-dropdown"> <!-- dropdown menu -->
+                <button class="dropdown-button"> Chela's Projects
+                </button>
+                <div class="dropdown-content">
+                    <a href="chela-portfolio.html"> Portfolio </a> 
+                    <a href="index.html"> Index Page  </a> 
+                </div>
+            </div>
+            <div class="top-header-dropdown"> <!-- dropdown menu -->
+                <button class="dropdown-button"> Reid's Projects
+                </button>
+                <div class="dropdown-content">
+                    <a href="reid-portfolio.html"> Portfolio </a> 
+                </div>
+            </div>
+        </div>
+        <h1> Main Landing Page </h1>
+        <h2> Hello World! </h2>
+        <p> This page is still under construction.</p>
+    </body>
+</html>
